@@ -12,17 +12,6 @@
     --font-body: 'Segoe UI', -apple-system, Roboto, 'Helvetica Neue', sans-serif;
 }
 
-[data-theme="dark"] {
-    --primary: #ffffff;
-    --secondary: #4eb3f3;
-    --accent: #0067b8;
-    --bg: #000000;
-    --surface: #1a1a1a;
-    --text-main: #ffffff;
-    --text-muted: #a6a6a6;
-    --border: #333333;
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -117,8 +106,9 @@ header {
 }
 
 .logo img {
-    height: 192px;
+    height: 48px;
     width: auto;
+    object-fit: contain;
 }
 
 .logo:hover {
@@ -161,8 +151,7 @@ header {
     color: #ffffff !important;
 }
 
-.mobile-menu-btn,
-.theme-toggle {
+.mobile-menu-btn {
     background: none;
     border: none;
     color: var(--text-main);
@@ -171,10 +160,6 @@ header {
     transition: all var(--transition);
     padding: 0.5rem;
     border-radius: 4px;
-}
-
-.theme-toggle:hover {
-    background-color: rgba(0, 0, 0, 0.08);
 }
 
 .mobile-menu-btn {
@@ -277,9 +262,7 @@ header {
     border-color: var(--text-main);
 }
 
-[data-theme="dark"] .btn.primary {
-    color: #111827;
-}
+
 
 /* Credibility Bar */
 .credibility-bar {
