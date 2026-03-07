@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Sweetberry-Photography-Website",
+    "description": null,
+    "language": "HTML",
+    "html_url": "https://github.com/Azureknight10/Sweetberry-Photography-Website"
+  },
+  {
+    "name": "Kids-Dashboard",
+    "description": null,
+    "language": "HTML",
+    "html_url": "https://github.com/Azureknight10/Kids-Dashboard"
+  },
+  {
+    "name": "AI-Agent-Observatory",
+    "description": null,
+    "language": "HTML",
+    "html_url": "https://github.com/Azureknight10/AI-Agent-Observatory"
+  },
+  {
+    "name": "aegis-ops-mission-copilot",
+    "description": "aegis-ops-mission-copilot",
+    "language": "HTML",
+    "html_url": "https://github.com/Azureknight10/aegis-ops-mission-copilot"
+  },
+  {
+    "name": "lifevault-orchestrator",
+    "description": "lifevault-orchestrator",
+    "language": "JavaScript",
+    "html_url": "https://github.com/Azureknight10/lifevault-orchestrator"
+  },
+  {
+    "name": "Developer-Dashboard",
+    "description": null,
+    "language": "HTML",
+    "html_url": "https://github.com/Azureknight10/Developer-Dashboard"
+  },
+  {
+    "name": "ci-cd-demo",
+    "description": "ci-cd-demo",
+    "language": "JavaScript",
+    "html_url": "https://github.com/Azureknight10/ci-cd-demo"
+  },
+  {
+    "name": "Woodgrove-Data-Power-Bi",
+    "description": null,
+    "language": null,
+    "html_url": "https://github.com/Azureknight10/Woodgrove-Data-Power-Bi"
+  },
+  {
+    "name": "FitbitDashboard",
+    "description": "FitbitDashboard",
+    "language": "HTML",
+    "html_url": "https://github.com/Azureknight10/FitbitDashboard"
+  },
+  {
+    "name": "cloudops-copilot-landing-zone",
+    "description": null,
+    "language": "HTML",
+    "html_url": "https://github.com/Azureknight10/cloudops-copilot-landing-zone"
+  },
+  {
+    "name": "life-ui-from-scratch",
+    "description": null,
+    "language": "Shell",
+    "html_url": "https://github.com/Azureknight10/life-ui-from-scratch"
+  },
+  {
+    "name": "Lifevault_Git",
+    "description": "Static site for daily files + notes, deployed on Netlify",
+    "language": "HTML",
+    "html_url": "https://github.com/Azureknight10/Lifevault_Git"
+  },
+  {
+    "name": "whatsapp-web.js",
+    "description": "A WhatsApp client library for NodeJS that connects through the WhatsApp Web browser app",
+    "language": "JavaScript",
+    "html_url": "https://github.com/Azureknight10/whatsapp-web.js"
+  },
+  {
+    "name": "chakra-doors-app",
+    "description": "chakra-doors-app",
+    "language": "JavaScript",
+    "html_url": "https://github.com/Azureknight10/chakra-doors-app"
+  },
+  {
+    "name": "chakra-door-journey",
+    "description": null,
+    "language": null,
+    "html_url": "https://github.com/Azureknight10/chakra-door-journey"
+  }
+]

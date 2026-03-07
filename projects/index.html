@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects & Portfolio | Shane Dennis | Cloud/AI Developer</title>
+    <meta name="description"
+        content="View the technical portfolio of Shane Dennis, including AI observability dashboards, Azure cloud architectures, and data engineering projects in Charlottesville.">
+    <meta name="keywords"
+        content="Shane Dennis projects, Shane Dennis AI observability, Shane Dennis Power BI analytics engineer, secure cloud dashboards">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Projects & Portfolio | Shane Dennis">
+    <meta property="og:description"
+        content="Technical portfolio including AI observability, Azure cloud, and data engineering projects.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/projects/">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container navbar">
+            <a href="/" class="logo"><img src="/mission-studio/assets/images/logo.png" alt="SafeHaven Logo"
+                    style="height: 180px; margin-right: 12px; vertical-align: middle;">Home</a>
+            <ul class="nav-links">
+                <li><a href="/about/">About</a></li>
+                <li><a href="/projects/" style="color: var(--text-main);">Projects</a></li>
+                <li><a href="/nonprofit/">Nonprofit</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><button id="theme-toggle" class="theme-toggle">🌓</button></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero container" style="padding-top: 4rem; padding-bottom: 2rem;">
+            <h1>My Portfolio</h1>
+            <p>Impact-driven technical projects, bridging the gap between raw data and secure, human-centered systems.
+            </p>
+        </div>
+
+        <section class="section container" style="padding-top: 2rem;">
+            <div class="card-grid" style="grid-template-columns: 1fr; gap: 4rem;">
+
+                <!-- Project 1 -->
+                <div class="card" style="display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; align-items: start;">
+                    <img src="../mission-studio/assets/images/blog-dashboard.png"
+                        alt="AI Observability Dashboard interface placeholder"
+                        style="width: 100%; border-radius: 0.5rem; object-fit: cover;">
+                    <div>
+                        <h2 style="font-size: 1.75rem; margin-top: 0;">AI Observability Dashboard</h2>
+                        <div class="badges" style="margin-bottom: 1.5rem;">
+                            <span class="badge">Next.js</span>
+                            <span class="badge">Azure AI</span>
+                            <span class="badge">Langfuse</span>
+                            <span class="badge">Python</span>
+                        </div>
+                        <p><strong>The Problem:</strong> As AI agents deploy into production environments, tracing their
+                            cognitive pathways, monitoring latency, and auditing cost are notoriously difficult.
+                            Unchecked models present severe compliance and ethical risks.</p>
+                        <p><strong>The Approach:</strong> I built a full-track integration using Langfuse and an
+                            internal Azure metadata index. I designed a Next.js frontend that allows operators to
+                            seamlessly dive into trace logs, enforce custom prompt safety filters, and view real-time
+                            latency analytics of multi-step agents.</p>
+                        <p><strong>The Outcome:</strong> We reduced debugging time from days to minutes, ensuring any
+                            anomalous AI behavior was flagged instantaneously while establishing a framework for
+                            scalable ethical oversight.</p>
+                        <div style="margin-top: 2rem;">
+                            <a href="https://github.com/Azureknight10/AI-Agent-Observatory" target="_blank"
+                                class="btn secondary">View Code</a>
+                            <a href="#" class="btn primary disabled"
+                                style="margin-left: 1rem; opacity: 0.5; pointer-events: none;">Private Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card" style="display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; align-items: start;">
+                    <img src="../mission-studio/assets/images/tech.png"
+                        alt="Health and Fitness Dashboard in Power BI placeholder"
+                        style="width: 100%; border-radius: 0.5rem; object-fit: cover;">
+                    <div>
+                        <h2 style="font-size: 1.75rem; margin-top: 0;">Health & Fitness Data Pipeline</h2>
+                        <div class="badges" style="margin-bottom: 1.5rem;">
+                            <span class="badge">Power BI</span>
+                            <span class="badge">Python</span>
+                            <span class="badge">Azure Tables</span>
+                        </div>
+                        <p><strong>The Problem:</strong> Managing personal physiological data (sleep, fasting cycles,
+                            heart rate) across disparate APIs restricts a unified view of biological progression and
+                            recovery.</p>
+                        <p><strong>The Approach:</strong> Developed automated Python scripts that pull raw JSON metrics
+                            directly from the Fitbit API. These pipelines transform unstructured biological logs into
+                            structured historical tables and Azure Blob layers. I then built dynamic Power BI dashboards
+                            on top, exposing nuanced, multi-layered correlations.</p>
+                        <p><strong>The Outcome:</strong> Established an automated daily "health intelligence" brief. The
+                            framework is highly extensible and can be repurposed for broader community wellness
+                            tracking.</p>
+                        <div style="margin-top: 2rem;">
+                            <a href="https://github.com/Azureknight10/FitbitDashboard" target="_blank"
+                                class="btn secondary">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="card" style="display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; align-items: start;">
+                    <img src="../mission-studio/assets/images/blog-essential.png"
+                        alt="Sweetberry Photography Site placeholder"
+                        style="width: 100%; border-radius: 0.5rem; object-fit: cover;">
+                    <div>
+                        <h2 style="font-size: 1.75rem; margin-top: 0;">Sweetberry Photography Portfolio</h2>
+                        <div class="badges" style="margin-bottom: 1.5rem;">
+                            <span class="badge">Vanilla HTML/CSS/JS</span>
+                            <span class="badge">Responsive Design</span>
+                        </div>
+                        <p><strong>The Problem:</strong> A high-end photography brand required a visually flawless
+                            interface that loaded instantly and provided custom administrative controls, free from the
+                            bloated confines of off-the-shelf CMS solutions like WordPress.</p>
+                        <p><strong>The Approach:</strong> Built a bespoke, mobile-first static portal. I integrated
+                            custom lazy-loading techniques for high-resolution images, fluid CSS grid masonry layouts,
+                            and an elegant toggle system for customized visual modes. Ensured absolute SEO supremacy
+                            using native tags.</p>
+                        <p><strong>The Outcome:</strong> Boosted search visibility drastically, improved dwell times
+                            with micro-interactions, and delivered a 99/100 Lighthouse performance score across the
+                            board.</p>
+                        <div style="margin-top: 2rem;">
+                            <a href="https://sweetberryphotography.com" target="_blank" class="btn secondary">Visit
+                                sweetberryphotography.com</a>
+                            <a href="https://github.com/Azureknight10/Sweetberry-Photography-Website" target="_blank"
+                                class="btn secondary" style="margin-left: 1rem;">View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="card" style="display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; align-items: start;">
+                    <img src="../mission-studio/assets/images/tech.png" alt="Aegis Ops Mission Copilot placeholder"
+                        style="width: 100%; border-radius: 0.5rem; object-fit: cover;">
+                    <div>
+                        <h2 style="font-size: 1.75rem; margin-top: 0;">Aegis Ops: Mission Copilot</h2>
+                        <div class="badges" style="margin-bottom: 1.5rem;">
+                            <span class="badge">Azure AI</span>
+                            <span class="badge">Python</span>
+                            <span class="badge">Secure Architecture</span>
+                        </div>
+                        <p><strong>The Problem:</strong> Tactical mission planning and intelligence analysis require
+                            rapid synthesis of fragmented, multi-domain data streams under extreme time pressure.</p>
+                        <p><strong>The Approach:</strong> I developed an intelligent copilot interface securely
+                            integrating operational data and utilizing Azure AI to streamline threat assessments,
+                            resource allocations, and operational overlays.</p>
+                        <p><strong>The Outcome:</strong> Bridged military intelligence frameworks with modern generative
+                            AI, creating a secure, low-latency decision-support tool tailored to complex environments.
+                        </p>
+                        <div style="margin-top: 2rem;">
+                            <a href="https://github.com/Azureknight10/aegis-ops-mission-copilot" target="_blank"
+                                class="btn secondary">View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="card" style="display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; align-items: start;">
+                    <img src="../mission-studio/assets/images/blog-essential.png"
+                        alt="CloudOps Landing Zone Copilot placeholder"
+                        style="width: 100%; border-radius: 0.5rem; object-fit: cover;">
+                    <div>
+                        <h2 style="font-size: 1.75rem; margin-top: 0;">CloudOps Copilot Landing Zone</h2>
+                        <div class="badges" style="margin-bottom: 1.5rem;">
+                            <span class="badge">Azure Bicep</span>
+                            <span class="badge">CI/CD</span>
+                            <span class="badge">Infrastructure as Code</span>
+                        </div>
+                        <p><strong>The Problem:</strong> Deploying secure, compliant enterprise Azure environments from
+                            scratch often leads to configuration drift and security vulnerabilities.</p>
+                        <p><strong>The Approach:</strong> Engineered an infrastructure-as-code (IaC) landing zone paired
+                            with an automated deployment pipeline. The system validates architecture blueprints and
+                            provisions resources using strict enterprise standards.</p>
+                        <p><strong>The Outcome:</strong> Accelerated secure cloud provisioning while embedding automated
+                            compliance checks directly into the CI/CD pipeline, guaranteeing robust environments from
+                            day one.</p>
+                        <div style="margin-top: 2rem;">
+                            <a href="https://github.com/Azureknight10/cloudops-copilot-landing-zone" target="_blank"
+                                class="btn secondary">View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="card" style="display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; align-items: start;">
+                    <img src="../mission-studio/assets/images/blog-privacy.png"
+                        alt="Nonprofit Case Management wireframe placeholder"
+                        style="width: 100%; border-radius: 0.5rem; object-fit: cover;">
+                    <div>
+                        <h2 style="font-size: 1.75rem; margin-top: 0;">Nonprofit Case Management Prototype</h2>
+                        <div class="badges" style="margin-bottom: 1.5rem;">
+                            <span class="badge">Cloud Architecture</span>
+                            <span class="badge">Privacy-by-Design</span>
+                        </div>
+                        <p><strong>The Problem:</strong> Organizations advocating for human trafficking survivors often
+                            rely on antiquated spreadsheet systems that jeopardized data security and created massive
+                            administrative bottlenecks.</p>
+                        <p><strong>The Approach:</strong> Conceptually developing a privacy-centric database
+                            infrastructure using Azure. The goal is to separate PII from functional tracking IDs,
+                            implementing zero-trust authentication protocols and automated resource-matching logic.</p>
+                        <p><strong>The Outcome:</strong> Setting the technical bedrock for <strong>SafeHaven Digital
+                                Studio</strong>.
+                            Scalable, secure, and rigorously audited to protect those who rely on it.</p>
+                        <div style="margin-top: 2rem;">
+                            <a href="/nonprofit/" class="btn primary">Read About SafeHaven</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section container"
+            style="text-align: center; background-color: var(--surface); border-radius: 1rem; margin-bottom: 4rem;">
+            <h2>Looking to Build Something Similar?</h2>
+            <p style="max-width: 600px; margin: 0 auto 2rem;">I am available for technical consulting on secure cloud
+                architecture, AI integrations, or custom data visualization pipelines.</p>
+            <a href="/#contact" class="btn primary">Schedule a Consultation</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <a href="/" class="logo"><img src="/mission-studio/assets/images/logo.png" alt="SafeHaven Logo"
+                    style="height: 180px; margin-right: 12px; vertical-align: middle;">Home</a>
+            <ul class="footer-links">
+                <li><a href="/about/">About</a></li>
+                <li><a href="/projects/">Projects</a></li>
+                <li><a href="/nonprofit/">Nonprofit</a></li>
+                <li><a href="/blog/">Blog</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

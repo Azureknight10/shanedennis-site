@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working With Tech Volunteers: Protecting Privacy | SafeHaven Digital Studio</title>
+    <meta name="description"
+        content="Discover how your nonprofit can safely utilize skilled tech volunteers without exposing sensitive survivor case data or compromising internal security.">
+    <meta name="keywords"
+        content="nonprofit tech volunteers, protecting survivor data, working with developers nonprofit, security boundaries">
+
+    <meta property="og:title" content="Working With Tech Volunteers: Protecting Privacy">
+    <meta property="og:description" content="How to harness pro-bono talent without exposing sensitive data.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://yourdomain.com/blog/working-with-tech-volunteers-privacy.html">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container navbar">
+            <a href="/" class="logo"><img src="../assets/images/logo.png" alt="SafeHaven Digital Studio Logo" style="height: 525px; vertical-align: middle;"></a>
+            <ul class="nav-links">
+                <li><a href="/#services">Services</a></li>
+                <li><a href="/#who-we-serve">Who We Serve</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#blog">Resources</a></li>
+                <li><a href="/#contact" class="btn primary" style="padding: 0.5rem 1rem;">Get Support</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="section container">
+        <article class="blog-content">
+            <a href="/#blog" style="margin-bottom: 2rem; display: inline-block; font-weight: 500;">&larr; Back to
+                Resources</a>
+
+            <h1>Working With Tech Volunteers: How to Protect Privacy and Set Clear Boundaries</h1>
+            <p class="meta">By <strong>Shane Dennis</strong> | Operations & Collaboration</p>
+
+            <img src="../assets/images/blog-volunteers.png"
+                alt="A developer and a nonprofit advocate reviewing a wireframe closely" class="blog-hero-image">
+
+            <h2>The Generosity Dilemma</h2>
+            <p>The tech industry is filled with talented developers, designers, and engineers eager to deploy their
+                skills for a worthy cause. Anti-trafficking nonprofits, constantly operating under immense financial
+                constraints, desperately need those skills.</p>
+
+            <p>A partnership seems obvious. Yet, inviting an external volunteer to interact with your organization's
+                digital infrastructure inherently creates tension between necessary progress and absolute security. What
+                happens when a well-meaning volunteer software engineer requests "read access" to your main database to
+                fix a bug in your intake form? How do you ensure survivor names remain strictly confidential while
+                allowing outsiders to modify your tech stack?</p>
+
+            <p>At SafeHaven Digital Studio, we function as both the builder and the coordinator for technical projects. Here
+                is how your nonprofit can utilize tech volunteers safely.</p>
+
+            <h3>1. Provide "Dummy Data", Never Real Production Tables</h3>
+            <p>It is standard for developers to require data to test the software they are building. A common,
+                catastrophic error is handing a volunteer a CSV file containing real client cases, even if "most" of the
+                names are redacted.</p>
+
+            <p><strong>The Solution:</strong> You must explicitly instruct volunteers to generate totally synthetic,
+                randomized "dummy data" (e.g., using libraries like Faker in Node or Python) to test logic loops,
+                dashboards, or intake forms. Ensure it is established in writing upfront that volunteers will never,
+                under any circumstances, be granted access to the production databases where real survivor PII resides.
+            </p>
+
+            <h3>2. Establish Granular, Project-Specific Access</h3>
+            <p>Your organization's primary Google Workspace or Microsoft 365 tenant likely holds years of sensitive
+                board minutes, legal strategy documents, and raw intake notes. A volunteer redesigning your
+                public-facing website does not need access to this ecosystem.</p>
+
+            <p><strong>The Solution:</strong> Spin up isolated environments. If they are redesigning your website, grant
+                them an "Editor" (not Admin) seat solely on the WordPress instance or static CMS. Do not use shared
+                generic passwords (e.g., "admin@shelter.org"). Issue them an explicitly scoped credential tied to their
+                name and revoke it the moment the project concludes.</p>
+
+            <h3>3. Request NDAs and Zero-Retention Agreements</h3>
+            <p>While an external volunteer may be acting in an entirely pro-bono capacity, your organization holds
+                identical liability for any data they touch. They must be legally bound to your privacy standards.</p>
+
+            <p><strong>The Solution:</strong> Implement a strong Non-Disclosure Agreement (NDA) and explicitly include a
+                "Data Deletion / Zero-Retention" clause. This mandates that the volunteer must irrevocably delete any
+                localized development code, temporary files, or server configurations residing on their personal
+                machines the moment the engagement ends.</p>
+
+            <h3>4. Assign a Technical "Translator" from Your Staff</h3>
+            <p>Engineers speak in arrays, APIs, and agile sprints. Social workers speak in trauma care, legal
+                precedents, and client stability. Without a translator, an excited volunteer might build a beautiful,
+                complex application that fundamentally fails to serve a traumatized end-user.</p>
+
+            <p><strong>The Solution:</strong> Appoint a single point of contact within your nonprofit who clearly
+                understands the workflow the new tech is meant to assist. This ensures the volunteer's technical
+                solutions remain rigidly aligned with the organization's trauma-informed ethos.</p>
+
+            <p>Or, let an organization like ours coordinate the development for you, handling the code, the security,
+                and the volunteers while you focus on the mission.</p>
+
+            <div
+                style="background: var(--surface); padding: 2.5rem; border-radius: 1rem; border: 1px solid var(--border); margin-top: 3rem; text-align: center;">
+                <h3 style="margin-top: 0;">We Bridge the Tech Gap</h3>
+                <p style="margin-bottom: 1.5rem;">Need a complex web project managed securely without exposing your
+                    data? Let us build it for you.</p>
+                <a href="/#contact" class="btn primary">Start a Secure Conversation</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <a href="/" class="logo"><img src="../assets/images/logo.png" alt="SafeHaven Digital Studio Logo" style="height: 525px; vertical-align: middle;"></a>
+            <p style="margin-top: 1rem; color: var(--text-muted); font-size: 0.9rem;">Empowering Anti-Trafficking
+                Organizations through Technology.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

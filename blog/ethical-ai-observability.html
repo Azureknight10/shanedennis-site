@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How I Build Ethical and Observable AI Systems in the Real World | Shane Dennis</title>
+    <meta name="description"
+        content="A practical deep dive into AI observability by Shane Dennis. Learn how to build ethical AI systems that trace agent actions securely.">
+    <meta name="keywords"
+        content="Shane Dennis AI observability, ethical AI engineer, AI observability dashboard, Azure AI developer">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="How I Build Ethical and Observable AI Systems">
+    <meta property="og:description" content="A practical deep dive into AI observability and tracing.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://yourdomain.com/blog/ethical-ai-observability.html">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container navbar">
+            <a href="/" class="logo"><img src="/mission-studio/assets/images/logo.png" alt="SafeHaven Logo" style="height: 180px; margin-right: 12px; vertical-align: middle;">Home</a>
+            <ul class="nav-links">
+                <li><a href="/about/">About</a></li>
+                <li><a href="/projects/">Projects</a></li>
+                <li><a href="/nonprofit/">Nonprofit</a></li>
+                <li><a href="/blog/" style="color: var(--text-main);">Blog</a></li>
+                <li><button id="theme-toggle" class="theme-toggle">🌓</button></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="section container">
+        <article class="blog-content">
+            <a href="/blog/" style="margin-bottom: 2rem; display: inline-block;">&larr; Back to Blog</a>
+
+            <h1>How I Build Ethical and Observable AI Systems in the Real World</h1>
+            <p class="meta">By <strong>Shane Dennis</strong> | 9 min read</p>
+
+            <img src="../mission-studio/assets/images/blog-dashboard.png"
+                alt="A dashboard visualization showing multi-step AI inference tracing">
+
+            <h2>The Core Problem with Generative AI</h2>
+            <p>Artificial Intelligence, particularly large language models (LLMs), has shifted software paradigms
+                drastically. We are no longer writing strictly deterministic functions where input A reliably produces
+                output B. Instead, we issue probabilistic prompts and cross our fingers that the outputs remain aligned.
+            </p>
+
+            <p>For toy applications, unpredictable failure modes are acceptable. But when integrating generative
+                capabilities into real-world business structures—particularly those processing sensitive logistical
+                data, medical triage notes, or enterprise decisions—deploying a “black box” algorithm is not just bad
+                engineering; it is an ethical hazard. As an AI engineer, my definition of a successful AI system isn’t
+                merely that it functions fluently; it must be measurable, accountable, and explicitly constrained. This
+                is the bedrock of <strong>AI Observability</strong>.</p>
+
+            <h2>Deconstructing the Black Box</h2>
+            <p>During my tenure architecting AI pipelines in Azure, one of the most persistent bottlenecks my team
+                encountered was debugging multi-agent workflows. When a user interacted with a specific cognitive
+                feature, the model might spin through four independent RAG (Retrieval-Augmented Generation) steps before
+                outputting a comprehensive answer.</p>
+
+            <p>If the final answer was wrong, biased, or injected with malicious logic, tracing exactly where the
+                reasoning failed was notoriously difficult. Did the vector database return irrelevant chunks? Did the
+                system prompt fail to enforce tone? Or did the token limit truncate critical context?</p>
+
+            <p>To solve this, I spearheaded the deployment of an end-to-end <strong>AI Observability Dashboard</strong>.
+                Our approach heavily utilized integration with Langfuse alongside secure Azure application insights.</p>
+
+            <h2>The Three Pillars of My Observability Practice</h2>
+
+            <h3>1. Complete Semantic Tracing</h3>
+            <p>Every single inference API call within our infrastructure was wrapped in an observability payload. We
+                recorded the exact raw prompt, temperature settings, internal model version, latency in milliseconds,
+                token cost boundaries, and of course, the definitive serialized output. </p>
+            <p>For an agentic workflow, we linked individual spans into hierarchical traces. This allowed an engineer to
+                visually expand a single user request and see exactly how the orchestrator model triggered downstream
+                micro-models to accomplish specific sub-tasks.</p>
+
+            <h3>2. Dynamic Quality Auditing and Scoring</h3>
+            <p>Logs naturally rot if nobody assesses them. Building an ethical AI means algorithmically or manually
+                scoring outputs. We instituted a real-time evaluation pipeline where outputs were flagged dynamically if
+                they breached similarity thresholds for harmful or hallucinatory content. Engineers could then enter the
+                observability dashboard and annotate failed traces directly, refining our system prompts organically
+                over time.</p>
+
+            <h3>3. Privacy-by-Default Logging</h3>
+            <p>As I continue to align my technical workflows with my advocacy work for vulnerable populations, handling
+                personally identifiable information (PII) is a paramount concern. An intrinsic component of ethical AI
+                is ensuring that, before an input string is ever transmitted to an external LLM API (e.g., Azure OpenAI)
+                or logged into our telemetry databases, PII is scrubbed or encrypted.</p>
+
+            <h2>Conclusion: Accountability as Code</h2>
+            <p>Building ethical AI cannot remain an abstract philosophy confined to whitepapers and corporate mission
+                statements. It has to be manifested as concrete code. It means writing rigorous unit tests for prompts,
+                validating schemas meticulously, and installing comprehensive dashboards that refuse to let erratic
+                algorithmic logic hide in the darkness.</p>
+
+            <p>As we march deeper into an agent-centric web, the engineers who will hold the most value aren't just the
+                ones who can command the models—they are the ones who can comprehensively understand, trace, and control
+                them. I am deeply committed to pushing this standard of accountability across the technical landscape in
+                Charlottesville and beyond.</p>
+
+            <div
+                style="background: var(--surface); padding: 2rem; border-radius: 1rem; border: 1px solid var(--border); margin-top: 3rem; text-align: center;">
+                <h3>Need an AI Architect?</h3>
+                <p style="margin-bottom: 1.5rem;">I build observable, secure AI system architectures tailored to
+                    enterprise compliance standards.</p>
+                <a href="/#projects" class="btn secondary">View My AI Dashboard Work</a>
+                <a href="/#contact" class="btn primary" style="margin-left: 1rem;">Let's Talk AI Security</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <a href="/" class="logo"><img src="/mission-studio/assets/images/logo.png" alt="SafeHaven Logo" style="height: 180px; margin-right: 12px; vertical-align: middle;">Home</a>
+            <ul class="footer-links">
+                <li><a href="/about/">About</a></li>
+                <li><a href="/projects/">Projects</a></li>
+                <li><a href="/nonprofit/">Nonprofit</a></li>
+                <li><a href="/blog/">Blog</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
