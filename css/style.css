@@ -28,6 +28,12 @@ body {
     color: var(--text-main);
     line-height: 1.6;
     transition: background-color var(--transition), color var(--transition);
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 a {
@@ -199,7 +205,7 @@ header {
     color: var(--secondary);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .nav-links {
         display: none;
     }
@@ -306,7 +312,7 @@ header {
     align-items: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .about-grid {
         grid-template-columns: 1fr;
     }
@@ -459,7 +465,7 @@ footer {
     list-style: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .container {
         width: 94%;
     }
@@ -557,5 +563,28 @@ footer {
     #nonprofit img[alt="SafeHaven Digital Studio Logo"] {
         height: 180px !important;
         max-width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .section {
+        padding: 2.75rem 0;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 1.65rem;
+    }
+
+    .hero img[alt="Shane Dennis Professional Portrait"] {
+        width: min(88vw, 230px) !important;
+        height: min(88vw, 230px) !important;
+    }
+
+    .social-links .btn {
+        flex: 1 1 100%;
     }
 }
